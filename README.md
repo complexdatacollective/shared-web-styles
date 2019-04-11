@@ -16,11 +16,13 @@ git submodule add https://github.com/codaco/shared-web-styles /assets/shared
 
 ### Jekyll-specific
 
-Whatever directory you add the submodule, make this the `sass_dir` in your Jekyll `_config.yml`, e.g.:
+Whatever directory you add the submodule, add this to the `load_paths` in your Jekyll `_config.yml`, e.g.:
 
 ```
 sass:
-  sass_dir: /assets/shared/shared-web-styles
+  load_paths:
+    - _sass
+    - assets/shared/shared-web-styles
 ```
 
 
