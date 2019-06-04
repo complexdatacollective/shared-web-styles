@@ -34,7 +34,7 @@
       color: $text-color-main;
       padding-bottom: 3px;
       font-size: 1rem;
-      font-family: $sans-serif-medium;
+      font-family: $quicksand-font;
       border-bottom: 2px solid transparent;
 
       &:hover {
@@ -48,7 +48,7 @@
         text-align: center;
         border-radius: 25px;
         color: white;
-        font-family: $sans-serif-medium;
+        font-family: $quicksand-font;
         cursor: pointer;
         padding: 17px 50px;
         font-size: .75rem;
@@ -84,7 +84,7 @@
     }
 
     a {
-      font-family: $sans-serif-medium;
+      font-family: $quicksand-font;
       font-size: .7rem;
       color: $color-a;
     }
