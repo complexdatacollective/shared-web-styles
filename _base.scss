@@ -8,21 +8,23 @@
 
 html {
   line-height: 1.15; 
-  -webkit-text-size-adjust: 100%;
-  font-size: 1rem;
-
-  // @include mq(desktop) {
-  //   font-size: 1.125rem;
-  // }
 }
 
 body {
   margin: 0;
-  font: 1em/1.375 $quicksand-font;
+  font: 16px $quicksand-font;
   color: $text-color-main;
   background: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @include mq(desktop, 'min-width') {
+    font: 16px $quicksand-font;
+  }
+
+  @include mq(large, 'min-width') {
+    font: 18px $quicksand-font;
+  }
 }
 
 main {

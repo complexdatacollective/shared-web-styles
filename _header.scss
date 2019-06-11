@@ -1,24 +1,32 @@
 .header {
   &__container {
-    padding: 2.5rem;
+    padding: 2.5rem 1.2rem;
     display: flex;
     justify-content: space-between;
     max-width: 1240px;
     margin: 0 auto;
     align-items: center;
     position: relative;
+
+    @include mq(desktop, 'min-width') {
+      padding: 2.5rem;
+    }
   }
 
   &__logo {
-    background-image: url('../img/logo.svg');
+    background-image: url('../img/logo-white-text.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 370px;
-    height: 100px;
+    width: 340px;
+    height: 80px;
 
-    @media (max-width: 1050px) {
+    @include mq-range(tablet, desktop){ 
       background-image: url('../img/logo-small.svg');
-      width: 140px;
+      width: 100px;
+    }
+
+    @include mq(desktop, 'min-width') {
+      background-image: url('../img/logo.svg');
     }
   }
 
@@ -34,7 +42,7 @@
       width: 22px;
       height: 2px;
       border-radius: 2px;
-      background: $color-cyber-grape;
+      background: white;
 
       &:not(:last-child) {
         margin-bottom: .25em;
@@ -108,10 +116,12 @@
     }
   }
 
-  @include mq(desktop-narrow, 'max-width') {
+  @include mq(tablet, 'max-width') {
     &__container {
-      justify-content: center;
-      flex-direction: column;
+      justify-content: space-between;
+      margin: 0;
+      background: $color-cyber-grape;
+      height: 120px;
     }
 
     &__nav {
@@ -122,25 +132,14 @@
   }
 
   @include mq(tablet, 'max-width') {
-    &__container {
-      justify-content: flex-start;
-      flex-direction: row;
-      padding: 1rem;
-    }
-
-    &__logo {
-      img {
-        width: 220px;
-      }
-    }
-
     &__menu-trigger {
       display: block;
 
       .has-open-nav & {  
-        display: block;      
-        position: fixed;
-        right: 1rem;
+        display: block;
+        span {
+          background: $color-cyber-grape;
+        }      
       }
     }
 
@@ -164,7 +163,7 @@
         background: white;
         z-index: 9000;
         top: 0;
-        padding: 35px 0 20px 20px;
+        padding: 3rem;
         width: 100%;
         height: 100%;
         left: 0;
