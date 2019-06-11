@@ -7,38 +7,38 @@
   color: white;
   font-family: $quicksand-font;
   cursor: pointer;
-  box-shadow: 0 2px 0 rgba($dark-1, 0.25);
+  box-shadow: 0 2px 0 rgba($shadow-color, 0.25);
 }
 
 .btn--color-a {
-  background: $color-a;
+  background: $color-primary;
 
   &:hover {
-    background: darken($color-a, 8%);
+    background: darken($color-primary, 8%);
   }
 }
 
 .btn--color-b {
-  background: $color-b;
+  background: $color-neon-coral;
 
   &:hover {
-    background: darken($color-b, 8%);
+    background: darken($color-neon-coral, 8%);
   }
 }
 
 .btn--color-c {
-  background: $color-c;
+  background: $color-mustard;
 
   &:hover {
-    background: darken($color-c, 8%);
+    background: darken($color-mustard, 8%);
   }
 }
 
 .btn--color-d {
-  background: $color-d;
+  background: $color-cyber-grape;
 
   &:hover {
-    background: darken($color-d, 8%);
+    background: darken($color-cyber-grape, 8%);
   }
 }
 

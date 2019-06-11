@@ -38,8 +38,8 @@
       border-bottom: 2px solid transparent;
 
       &:hover {
-        color: $color-a;
-        border-bottom: 2px solid $color-a;
+        color: $color-primary;
+        border-bottom: 2px solid $color-primary;
       }
 
       &.btn {
@@ -86,7 +86,7 @@
     a {
       font-family: $quicksand-font;
       font-size: .7rem;
-      color: $color-a;
+      color: $color-primary;
     }
   }
 }

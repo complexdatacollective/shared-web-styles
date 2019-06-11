@@ -2,12 +2,15 @@
 $quicksand-font: 'Quicksand', sans-serif;
 
 // Colors
-$color-a: #57C6a4; // Green
-$color-b: #d1395d; // Red
-$color-c: #eab93f; // Yellow
-$color-d: #3a3a75; // Purple
-$color-e: #16152b; // Very Dark Blue
-$color-f: #00C9A2; // Light Sea Green
+$color-primary: #00C9A2; // Green
+$color-neon-coral: #d1395d; // Red
+$color-mustard: #eab93f; // Yellow
+$color-cyber-grape: #3a3a75; // Purple
+$color-navy-taupe: #16152b; // Very Dark Blue
+
+$color-platinum: #f2f6f7;
+$color-platinum-dark: #dae3e5;
+
 
 $text-color-main: #2d2955; // Dark Purple
 $text-color-light: #aaaaaa;
@@ -18,7 +21,7 @@ $gray-light-1: #efefef;
 $gray-light-2: #b4c5cf;
 
 // Darks
-$dark-1: #191630;
+$shadow-color: rgba(0, 0, 0, 0.75);
 
 // Layout
 $container-width: 90%;

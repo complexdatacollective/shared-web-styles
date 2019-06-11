@@ -10,11 +10,16 @@
   }
 
   &__logo {
-    background: url('../img/logo.svg');
+    background-image: url('../img/logo.svg');
     background-repeat: no-repeat;
     background-size: contain;
     width: 370px;
     height: 100px;
+
+    @media (max-width: 1050px) {
+      background-image: url('../img/logo-small.svg');
+      width: 140px;
+    }
   }
 
   &__menu-trigger {
@@ -22,7 +27,6 @@
     cursor: pointer;
     outline: none;
     z-index: 9999;
-    padding: 15px 0 15px 15px;
 
     span {
       position: relative;
@@ -30,7 +34,7 @@
       width: 22px;
       height: 2px;
       border-radius: 2px;
-      background: $color-d;
+      background: $color-cyber-grape;
 
       &:not(:last-child) {
         margin-bottom: .25em;
@@ -78,8 +82,8 @@
       border-bottom: 2px solid transparent;
 
       &:hover {
-        color: $color-a;
-        border-bottom: 2px solid $color-a;
+        color: $color-primary;
+        border-bottom: 2px solid $color-primary;
       }
     }
   }
@@ -108,10 +112,6 @@
     &__container {
       justify-content: center;
       flex-direction: column;
-    }
-
-    &__logo {
-      margin-bottom: 20px;
     }
 
     &__nav {
