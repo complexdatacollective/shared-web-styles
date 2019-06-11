@@ -1,9 +1,8 @@
 .header {
   &__container {
-    padding: 2.5em 0;
+    padding: 2.5rem;
     display: flex;
     justify-content: space-between;
-    width: 94%;
     max-width: 1240px;
     margin: 0 auto;
     align-items: center;
@@ -11,16 +10,15 @@
   }
 
   &__logo {
-    img {
-      width: 370px;
-    }
+    background: url('../img/logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 370px;
+    height: 100px;
   }
 
   &__menu-trigger {
     display: none;
-    position: absolute;
-    right: 0;
-    top: 25px;
     cursor: pointer;
     outline: none;
     z-index: 9999;
@@ -127,7 +125,7 @@
     &__container {
       justify-content: flex-start;
       flex-direction: row;
-      padding: 1rem 0;
+      padding: 1rem;
     }
 
     &__logo {
@@ -156,7 +154,7 @@
         margin-bottom: 16px;
 
         a {
-          font-size: 1.3rem;
+          font-size: 1.2rem;
         }
       }
 
