@@ -7,6 +7,10 @@
     width: 46%;
   }
 
+  &__col-full {
+    width: 100%;
+  }
+
   @include mq(ipad, 'max-width') {
     flex-direction: column;
 
