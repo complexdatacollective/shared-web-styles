@@ -13,6 +13,7 @@ html {
 body {
   margin: 0;
   font: 16px $quicksand-font;
+  font-display: swap;
   color: $text-color-main;
   background: white;
   -webkit-font-smoothing: antialiased;
