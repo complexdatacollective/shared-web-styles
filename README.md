@@ -5,7 +5,7 @@ This repo contains shared sass modules that can be imported into other projects.
 ### Adding the submodule to a project
 
 ```bash
-git submodule add https://github.com/codaco/shared-web-styles /assets/shared
+git submodule add https://github.com/complexdatacollective/shared-web-styles /assets/shared
 ```
 
 ### Importing
